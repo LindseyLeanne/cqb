@@ -1,0 +1,115 @@
+ 
+/* -- Specific Styles -- */
+//Logo
+#logomark {  }
+
+//Off canvas
+
+#section__nav { display: block; background-color: $darkgray; width: 300px; position: fixed; right: -300px; top: 0; bottom: 0; z-index: 2; @include transition(all .3s ease); @include box-shadow(0px 0px 29px 0px rgba(0,1,1,0.3)); }
+#section__nav--icon-bars { display: none; color: $white; position: absolute; right: 21px; top: 30px; font-size: 1.4em; cursor: pointer;}
+#section__nav--nav { position: absolute; top: 0px; width: 100%; padding-left: 0px;
+	li { text-align: center; font-size: .95rem; line-height: 2.4rem; padding-bottom: 10px; padding-top: 10px;
+}
+	> li { list-style: none; text-align: center !important; margin-bottom: 0px; cursor: pointer; list-style: none; text-align: right; font-family: $primfont;  @include transition (all .4s ease);
+		&.active {  }
+		> a { padding-left: 0px; color: #eaeaeb; font-family: $primfont; }
+	}
+}
+
+#section__page { padding: 0; width: 100%; position: relative; right: 0; }
+
+
+#section__nav, #section__page, #header__main--logo, #section__navigation { @include transition(all .3s ease); }
+#section__nav.push-to-left { right: 0; }
+#section__page.push-to-left { right: 300px; }
+#section__header--main.push-to-left { right: 300px; }
+#section__navigation.push-to-left { right: 300px; }
+
+
+
+#section__header { box-sizing: border-box; top: 50px; position: absolute; width: 100%; }
+#section__header--main, #section__first--internal{ padding-top: 0; padding-bottom: 0; }
+
+#section__header--main-nav { position: relative; z-index: 2; 
+	> a > img { margin-top: 15px; }
+}
+
+#section__main-nav--nav { float: right; padding:0; margin:0; list-style: none; position: relative;display:block;
+	li { margin-top: 42px; margin-right: 15px; @include transition (.3s); float:left; display:list-item; list-style: none;  background-color:none; position: relative; 
+		a { @include transition (.3s); display:block; padding:12px 12px; text-transform: uppercase; color:$white; text-decoration:none; font-family: $primfont; font-weight: 500; font-weight: 500; letter-spacing: .2rem; font-size: .75rem; border-right: solid 1px $white; line-height: 2px; padding-top: 5px; padding-bottom: 5px;
+			&:hover { color: $white; }
+		}
+		&:last-child a { border-right: none; margin-right: 0 !important; }		
+		&:last-child { margin-right: 0px; }
+	}
+}
+
+
+
+
+
+// SLIDESHOW
+
+#section__first { height: 860px; position: relative; z-index: 1; padding: 0; width: 100%; top: 0; }
+// #section__first--internal { padding: 0 30% 0 30%; @include box-sizing(border-box); background-image: url(../img/hero.jpg); min-height: 40%; }
+
+#section__first--main { margin-top:0px; padding: 0; 
+	h1 { }
+	h5 { }
+	a.button { font-family: $primfont; margin-top: 40px; position: relative; background: $blue; margin: auto; }
+}
+
+.section__first--slide { display: table !important; }
+
+.section__first--slide-content {  }
+
+
+
+
+#section__first--internal { height: 520px; 
+
+	.section__first--slide-content-wrap { padding-top: 100px; position: relative; z-index: 9999; }
+}
+
+#section__content { background: $white; overflow: hidden; }
+
+
+
+//FOOTER
+
+#section__footer { clear: both; background: $white; padding-top: 25px; padding-bottom: 25px; overflow: hidden; }
+
+
+
+// PAGE BUILDER
+
+
+
+// Testimonials
+.testimonial-slideshow { 
+&:before { content: '"'; position: absolute; top: -110px; color: $blue; font-size: 12rem; font-family: $primfont; left: 0; right: 0; margin: auto; text-align: center; }
+}
+.testimonials-container { @extend .background-cover; padding: 140px 0 80px 0px; }
+.testimonial { display: none; width: 100%; bottom: 0;
+	
+	&:first-child { display: block; }
+}
+.testimonial__content { width: 100%; tetx-align: center; }
+.testimonial__image { @extend .float-left; }
+.testimonial--has-image { @extend .testimonial; 
+	> .testimonial__quote { @extend .float-left; width: 89%; width: calc(100% - 120px); padding-left: 50px; }
+}
+.testimonial__quote { font-size: 1.7rem; line-height: 3rem; color: $darkgray; }
+.testimonial__quote__p {
+	> p { font-family: $primfont !important; font-size: 1.1rem; text-align: center;text-align: center; text-align: center; line-height: 2.8rem; font-weight: 300; }
+}
+.testimonial__name, .testimonial__org { font-size: 1.3rem; text-transform: uppercase; letter-spacing: .25rem; line-height: 1.8rem; }
+.testimonial__name { color: $blue; text-align: center; font-family: $primfont; font-size: .75rem; }
+.testimonial__org { color: $brown; text-align: center; font-family: $primfont; font-size: .85rem;  }
+
+
+
+
+
+
+

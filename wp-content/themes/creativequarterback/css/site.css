@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Sass Error: Undefined variable: \"$blue\". \A         on line 59 of \\Applications\\MAMP\\htdocs\\cqb\\wp-content\\themes\\creativequarterback\\sass\\specific_styles.scss \A         from line 6 of \\Applications\\MAMP\\htdocs\\cqb\\wp-content\\themes\\creativequarterback\\sass\\site.scss \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

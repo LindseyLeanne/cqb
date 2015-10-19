@@ -1,0 +1,168 @@
+
+@media only screen and ( max-width: 70em) {
+	.wrapper { max-width: 1020px;}
+	#section__content--intro--main.about > .wrapper figure { right: 24px; top: 15px; }
+	#section__content--hourofcode--main > .column-parent-halves > .column { width: 100%; background-position: center; text-align: center; }
+	aside.hourofcode--video > iframe { left: 0; right: 0; margin: auto; }
+	.flip-container, .frontcard, .backcard { height: 400px; } 
+}
+
+@media only screen and ( max-width: 66.25em) {
+	.column-parent-four-items { 
+	> .column { width: 50%; width: calc(50% - 30px); margin-left: 1%; display: inline-block; }
+}
+	#section__schools--main--post { height: 360px; }
+	#section__content--accordion { padding-top: 30px; padding-bottom: 30px; }
+	.wrapper { max-width: 95%; margin: auto; }
+	#section__header--main-nav > a > img { margin: auto; position: absolute; left: 0; right: 0; z-index: 1;}
+	#section__main-nav--nav { display: none; }
+	#section__nav--icon-bars { display: block; }
+	#section__header--main-nav > a > img { margin-top: 20px; }
+	#section__header { z-index: 999; background: $blue; width: 100%;top: 0; }
+	#section__content--infographic, #section__content--intro.internal, #section__stats { text-align: center; 
+		form { text-align: left; }
+		ul { text-align: left; }
+	}
+	#logomark { z-index: 9999; padding: 40px 30px; }
+	#section__content--intro.bg-gray { text-align: left; }
+	#section__footer--list { display: none; }
+	figure.decoration { display: none; }
+	#section__content--intro--main > .wrapper > p { width: 100%; }
+	#section__content--columns--text > ul li { margin-bottom: 20px; }
+	#section__hero.internal > aside > h2 { top: 50px; }
+	#accordion--list > li.section__accordion--item aside.accordion-content { text-align: left; }
+	#accordion--list > li.section__accordion--item aside.accordion-content > ul { text-align: left; }
+
+}
+
+@media only screen and (max-width: 65.938em){
+	.column-parent-fourths.model > .column { width: 100%; margin-bottom: 20px; padding-left: 0; margin-left: 0; 
+		> #column-wrap--list { margin: auto; width: 90%; }
+	}
+}
+
+@media only screen and (max-width: 65.75em){
+}
+
+@media only screen and (max-width: 62.5em){
+	#pagination > .column { width: 50%; }
+}
+
+@media only screen and (max-width: 62.5em){
+}
+
+@media only screen and (max-width: 59.25em){
+	#section__principles { margin-left: 0px; margin-right: -30px; padding: 0 0 60px 0; }
+	#section__principles--main { margin-right: 0px; }
+	#section__principles--main--list > li { width: 90%; margin: auto; margin-bottom: 10px; }
+	#section__content--text--list li { padding: 80px 30px 40px 30px;}
+}
+
+@media only screen and (max-width: 57.5em){
+	.column-parent-halves > .column { width: 100%; } 
+	#section__content--intro.internal { padding-bottom: 0; }
+	#section__content--columns--text { margin-bottom: 0px; }
+	 #section__content--columns--text > figure { max-width: 72%; margin-bottom: 10px;}
+	body.page-about #section__content--columns:first-child { padding-bottom: 0;}
+	body.page-about #section__content--columns:last-child { padding-top: 0;}
+
+}
+
+@media only screen and (max-width: 54.375em){
+	#section__footer--main { 
+		a.button { position: relative; }
+		#section__footer--social { text-align: center; width: 300px; margin: auto; left: 0; right: 0; float: none !important; }
+	}
+	
+}
+
+
+@media only screen and (max-width: 53.125em) {
+
+}
+
+@media only screen and (max-width: 52.125em) {
+	.column-parent-halves > .column { width: 100%; }
+	#pagination > .column { width: 50%; }
+	#section__content--main-text > h2 { margin-top: 30px; }
+
+	#section__hero.internal > section > h1 { max-width: 80%; font-size: 1.6rem; }
+
+
+}
+
+
+
+@media only screen and (max-width: 51.563em){
+	#section__content--philosophy--list li div.image { margin: auto; float: none; padding-top: 15px; }
+	#section__content--philosophy--list li aside { padding: 10px; text-align: center; }
+	#section__content--philosophy--list li { padding-bottom: 15px; }
+	#section__content--philosophy--list li h5 { font-size: 1.2rem; display: block; margin-bottom: 10px; line-height: 1.4rem; }
+}
+
+@media only screen and (max-width: 50em) {
+
+#section__blog--main--post > aside a > figure { height: 150px; }
+#section__blog--main--post > p { text-align: center; }
+#callout-1, #callout-2 { width: 100%; }
+#logomark { position: absolute; z-index: 9999; background-color: #333; padding: 60px 30px 40px 30px; margin: auto; left: 0; right: 0; width: 160px; }
+#section__footer--copyright { text-align: center; width: 100%; margin-bottom: 60px; }
+#section__footer--main a.button { position: absolute; top: 70px; }
+#section__footer--main #section__footer--social { width: 270px; }
+}
+
+
+@media only screen and (max-width: 41.563em) {
+	#callout-1 p, #callout-2 p { top: 30%; font-size: 1rem; }
+}
+
+
+@media only screen and (max-width: 38em){ 
+	h1 { font-size: 2.6rem; line-height: 3.2rem; }
+
+}
+
+@media only screen and (max-width: 36.25em){ 
+
+
+}
+
+@media only screen and (max-width: 33.875em){
+
+
+}
+@media only screen and (max-width: 32em){
+}
+
+@media only screen and (max-width: 32em){
+	a.phone { margin-right: 70px; }
+	#section__first--main h5 { padding-top: 20px; }
+	#section__nav--nav { top: 40px !important; }
+	#section__blog--main--post > aside a > figure { height: 100px; }
+	#section__first--internal .section__first--slide-content-wrap { padding-top: 160px; }
+	.section__first--slide-content { width: 85%; }
+	#section__first--main li div div h1 { font-size: 2rem; line-height: 2.4rem; }
+	
+	h2 { font-size: 2.4rem; line-height: 2.8rem; }
+}
+
+@media only screen and (max-width: 28.75em){
+	#section__schools--main--post { height: 240px; }
+	#issues > li > p { width: 35%; }
+	h2 { font-size: 1.8rem; line-height: 2.4rem; }
+	#section__content--services--list li { width: 100%; }
+	.testimonial__quote__p > p { font-size: .85rem; padding-left: 20px; padding-right: 20px; }
+
+}
+
+@media only screen and (max-width: 25em) {
+	#section__footer--main .button.outline { top: 75px; }
+}
+
+//IE only
+@media screen\0 {
+	.about#section__content--intro--main > .wrapper figure { right: 56px; }
+}
+
+
+
