@@ -7,11 +7,11 @@
 	<title>Creative Quarterback</title>
 
     <link rel="stylesheet" href="<?=get_stylesheet_directory_uri();?>/css/site.css">
-    <link rel="stylesheet" href="<?=get_stylesheet_directory_uri();?>/css/mobile_styles.css">
 
 	<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">	
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6145912/784344/css/fonts.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- 	<link rel="image_src" href="<?=get_stylesheet_directory_uri();?>/img/nextech-splash.jpg" />
 	<meta property="og:image" content="<?=get_stylesheet_directory_uri();?>/img/nextech-splash.jpg"  /> -->
@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="<?=get_stylesheet_directory_uri(); ?>/js/equalize-height.js"></script>
 		<script type="text/javascript" src="<?=get_stylesheet_directory_uri(); ?>/js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="<?=get_stylesheet_directory_uri(); ?>/js/jquery.stellar.init.min.js"></script>
+	<script type="text/javascript" src="<?=get_stylesheet_directory_uri(); ?>/js/instafeed.min.js"></script>
 	<!--THESE NEED TO BE ENQUED BEFORE LAUNCH-->
 	
 	<!--[if lt IE 10]>
@@ -53,9 +54,9 @@
 	</section>
 
 	<section id="section__page" class="js-sliding-nav full-height">
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logomark" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" alt="Creative Quarterback Logo"><img src="<?php echo get_bloginfo('template_directory');?>/img/creativequarterback-logo.png" id="logo" alt="Creative Quarterback Logo"/></a>
 		<header id="section__header"> 
-			<section id="section__header--main" class="wrapper">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logomark" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" alt="Creative Quarterback Logo"><img src="<?php echo get_bloginfo('template_directory');?>/img/creativequarterback-logo.png" id="logo" alt="Creative Quarterback Logo"/></a>
+			<section id="section__header--main">
 				<nav id="section__header--main-nav">
 				
 					<?php 

@@ -9,13 +9,13 @@ $(document).ready(function() {
 
 
 
-	// equal height
-      $('.equal-height').each(function() {
-            var self = $(this);
-            self.imagesLoaded(function() {
-                  equalHeight(self);
-            });
-      });
+	// // equal height
+ //      $('.equal-height').each(function() {
+ //            var self = $(this);
+ //            self.imagesLoaded(function() {
+ //                  equalHeight(self);
+ //            });
+ //      });
 
       // slideshow
       $('#section__first--main').cycle({

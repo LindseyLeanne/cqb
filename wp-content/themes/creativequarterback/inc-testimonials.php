@@ -8,8 +8,7 @@
 					<div class="testimonial__content">
 						<?=(($testimonial_hasimage) ? '<img class="testimonial__image" src="' . $testimonial['testimonial_image']['sizes']['image-120-120'] . '" title="' . $testimonial['testimonial_organization'] . '">' : '');?>
 						<div class="testimonial__quote__p"><?=do_shortcode($testimonial['testimonial_quote'])?></div>
-						<div class="testimonial__name"><?=$testimonial['testimonial_name']?>,</div> 
-						<div class="testimonial__org"><?=$testimonial['testimonial_org']?></div>
+						<h5><?=$testimonial['testimonial_name']?>, <?=$testimonial['testimonial_org']?></h5>
 					</div>
 				</article>
 		<?php

@@ -63,13 +63,14 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 
-	acf_add_options_page(array(
-		'page_title' 	=> 'Blog Settings',
-		'menu_title'	=> 'Blog Settings',
-		'menu_slug' 	=> 'blog-settings',
+		acf_add_options_page(array(
+		'page_title' 	=> 'Newsletter Panel Settings',
+		'menu_title'	=> 'Newsletter Panel Settings',
+		'menu_slug' 	=> 'newsletter-panel-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
+
 	
 	
 }

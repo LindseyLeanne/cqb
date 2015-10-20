@@ -1,9 +1,18 @@
- 
+ /* -- Page Specific Styles -- */
+ body.page-cqb { 
+	#section__header { background: none; }
+ }
+
+ body.page-about,  body.page-portfolio,  body.page-services,  body.page-contact { 
+ 		#section__header { background: $darkgray; }
+
+ }
 /* -- Specific Styles -- */
 //Logo
-#logomark {  }
+#logomark { position: absolute; z-index: 9;  }
 
-//Off canvas
+
+//Off Canvas Menu
 
 #section__nav { display: block; background-color: $darkgray; width: 300px; position: fixed; right: -300px; top: 0; bottom: 0; z-index: 2; @include transition(all .3s ease); @include box-shadow(0px 0px 29px 0px rgba(0,1,1,0.3)); }
 #section__nav--icon-bars { display: none; color: $white; position: absolute; right: 21px; top: 30px; font-size: 1.4em; cursor: pointer;}
@@ -26,8 +35,10 @@
 #section__navigation.push-to-left { right: 300px; }
 
 
+// Desktop Navigation
 
-#section__header { box-sizing: border-box; top: 50px; position: absolute; width: 100%; }
+
+#section__header { box-sizing: border-box; width: 100%; background: $darkgray; position: fixed; padding: 20px 50px; z-index: 999; }
 #section__header--main, #section__first--internal{ padding-top: 0; padding-bottom: 0; }
 
 #section__header--main-nav { position: relative; z-index: 2; 
@@ -35,11 +46,13 @@
 }
 
 #section__main-nav--nav { float: right; padding:0; margin:0; list-style: none; position: relative;display:block;
-	li { margin-top: 42px; margin-right: 15px; @include transition (.3s); float:left; display:list-item; list-style: none;  background-color:none; position: relative; 
-		a { @include transition (.3s); display:block; padding:12px 12px; text-transform: uppercase; color:$white; text-decoration:none; font-family: $primfont; font-weight: 500; font-weight: 500; letter-spacing: .2rem; font-size: .75rem; border-right: solid 1px $white; line-height: 2px; padding-top: 5px; padding-bottom: 5px;
-			&:hover { color: $white; }
+	li { padding: 20px 10px; margin-right: 15px; @include transition (.3s); float:left; display:list-item; list-style: none;  background-color:none; position: relative; 
+		a { @include transition (.3s); display:block; padding:12px 12px; color:$white; text-decoration:none; font-family: $primfont; font-weight: 500; font-weight: 500; letter-spacing: .2rem; font-size: .75rem; line-height: 2px; padding-top: 5px; padding-bottom: 5px;
+			&:hover { color: $green; }
 		}
-		&:last-child a { border-right: none; margin-right: 0 !important; }		
+		&:last-child a { background: $green; padding: 20px 30px; @include border-radius(2px); @include transition (.3s);
+				&:hover { background: $white; color: $green; }
+		}		
 		&:last-child { margin-right: 0px; }
 	}
 }
@@ -48,23 +61,79 @@
 
 
 
-// SLIDESHOW
+// Hero Primary
 
 #section__first { height: 860px; position: relative; z-index: 1; padding: 0; width: 100%; top: 0; }
 // #section__first--internal { padding: 0 30% 0 30%; @include box-sizing(border-box); background-image: url(../img/hero.jpg); min-height: 40%; }
 
-#section__first--main { margin-top:0px; padding: 0; 
-	h1 { }
-	h5 { }
-	a.button { font-family: $primfont; margin-top: 40px; position: relative; background: $blue; margin: auto; }
-}
 
 .section__first--slide { display: table !important; }
 
-.section__first--slide-content {  }
+.section__first--slide-content { text-align: center; 
+	h1 { text-transform: uppercase; color: $white; font-family: $primfont; margin-bottom: 20px;
+		span { color: $green; font-variant: none; }
+	}
+	h5 { color: $white; }
+}
+
+
+// PAGE BUILDER SECTIONS
+
+// Text with Services Panel
+#section__content--services {}
+#section__content--services--main {
+	h1 {}
+	h5 {}
+	p {}
+}
+#section__content--services--list { margin-bottom: 50px;
+	li {  background-image: linear-gradient($lightgray, $lightestgray ); padding: 25px 20px; 
+		h5 { }
+	}
+}
+
+
+// Image Countdown
+
+#section__content--imagecountdown { padding-bottom: 0px; padding-top: 140px; }
+#section__content--imagecountdown--main {
+	a.button-white { text-align: center; display: block;width: 15%;margin: auto auto 140px auto;}
+}
+#section__content--imagecountdown--countdown { background: rgba($green, .95); padding: 65px 0px 90px 0px;
+	h4 { color: $white; margin-bottom: 60px; }
+}
+#section__content--imagecountdown--countdown--list {
+	li { border-right: solid 1px rgba($white,.5); 
+		h2 { margin-bottom: 30px; }
+		h6 { text-transform: uppercase; }
+	}
+}
 
 
 
+// Testimonials
+.testimonial-slideshow { 
+&:before { content: url('../img/quotemark.png'); position: absolute; top: -220px; font-size: 12rem; font-family: $primfont; left: 0; right: 0; margin: auto; text-align: center; }
+}
+.testimonials-container { @extend .background-cover; padding: 140px 0 80px 0px; }
+.testimonial { display: none; width: 100%; bottom: 0;
+	
+	&:first-child { display: block; }
+}
+.testimonial__content { width: 100%; text-align: center; 
+	h5 { color: $green;}
+}
+
+
+
+//Client Logos
+#section__client-carousel { background: $darkgray; }
+.info-section__content--short {}
+#client-carousel {
+			li {}
+			img {}
+		}
+			
 
 #section__first--internal { height: 520px; 
 
@@ -74,40 +143,44 @@
 #section__content { background: $white; overflow: hidden; }
 
 
+// Instagram
+
+// Call to Action
+#section__content--cta {}
+#section__content--cta--main {
+		h1 { color: $white; }
+		p { color: $white; }
+		a {}
+}
+
+
+
+
+
+
+//Newsletter
+
+#section__content--newsletter { background-color: $darkestgray; }
+#section__content--newsletter--main {
+		h1 { color: $white;}
+		h4 { color: $medgray; }
+ }
 
 //FOOTER
 
 #section__footer { clear: both; background: $white; padding-top: 25px; padding-bottom: 25px; overflow: hidden; }
 
-
-
-// PAGE BUILDER
-
-
-
-// Testimonials
-.testimonial-slideshow { 
-&:before { content: '"'; position: absolute; top: -110px; color: $blue; font-size: 12rem; font-family: $primfont; left: 0; right: 0; margin: auto; text-align: center; }
+#section__footer--main {}
+#section__footer--links { color: $gray; list-style-type: none; 
+		li { display: inline; font-size: .85rem; padding-right: 5px; border-right: solid 1px $gray; 
+			&:last-child { border-right: none; }
+		}
 }
-.testimonials-container { @extend .background-cover; padding: 140px 0 80px 0px; }
-.testimonial { display: none; width: 100%; bottom: 0;
-	
-	&:first-child { display: block; }
+#footer--social {
+	ul {
+		li { border-right: none; }
+	}
 }
-.testimonial__content { width: 100%; tetx-align: center; }
-.testimonial__image { @extend .float-left; }
-.testimonial--has-image { @extend .testimonial; 
-	> .testimonial__quote { @extend .float-left; width: 89%; width: calc(100% - 120px); padding-left: 50px; }
-}
-.testimonial__quote { font-size: 1.7rem; line-height: 3rem; color: $darkgray; }
-.testimonial__quote__p {
-	> p { font-family: $primfont !important; font-size: 1.1rem; text-align: center;text-align: center; text-align: center; line-height: 2.8rem; font-weight: 300; }
-}
-.testimonial__name, .testimonial__org { font-size: 1.3rem; text-transform: uppercase; letter-spacing: .25rem; line-height: 1.8rem; }
-.testimonial__name { color: $blue; text-align: center; font-family: $primfont; font-size: .75rem; }
-.testimonial__org { color: $brown; text-align: center; font-family: $primfont; font-size: .85rem;  }
-
-
 
 
 
