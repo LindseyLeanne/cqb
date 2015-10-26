@@ -1,20 +1,28 @@
-<section id="section__content--services">
-		<article id="section__content--services--main" class="wrapper">
-		<h5>Who We are & What We Do</h5>
-		<h1>Where Right Brain Meets Left Brain</h1>
-		<ul id="section__content--services--list" class="column-parent-six-items list-clear equal-height" data-group-by="4">
+<section id="section__content--list">
+		<h4><?=$section['section_subtitle']?></h4>
+		<h1><?=$section['section_title']?></h1>
+		<article id="section__content--list--main" class="wrapper text-center column-parent-two-items">
+		<aside class="column">
+		<p><?=$section['section_content']?></p>
+		</aside>
+		<aside class="column">
+		<ul id="section__content--list--list" class="list-clear equal-height">
 		<?php 
-			foreach ($section['services_list'] as $item => $block) :
+			foreach ($section['list'] as $item => $block) :
 		?>
-			<li class="column six-item animate fadeIn wow">
-				<div class="image"><img src="<?=$block['service_image']?>"/></div><aside><h5 class="caps"><?=$block['service_title']?></h5></aside>
+			<li class="column animate fadeIn wow">
+				<?=$section['item']?>
 			</li>
 		<?php
 			endforeach;
 		?>
 
 		</ul>
-		<a class="button bg-green" href="#">The Full Service Suite</a>
+		</aside>
+
+		<?php if ($section['button_text'] !== '') : ?>
+		<a class="button bg-green" href="<?=$section['button_link']?>"><?=$section['button_text']?></a>
+		<?php endif; ?>
 
 	</article>
 </section>

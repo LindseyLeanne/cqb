@@ -1,5 +1,5 @@
  /* -- Page Specific Styles -- */
- body.page-cqb { 
+ body.front { 
 	#section__header { background: none; }
  }
 
@@ -64,18 +64,27 @@
 // Hero Primary
 
 #section__first { height: 860px; position: relative; z-index: 1; padding: 0; width: 100%; top: 0; }
-// #section__first--internal { padding: 0 30% 0 30%; @include box-sizing(border-box); background-image: url(../img/hero.jpg); min-height: 40%; }
 
 
 .section__first--slide { display: table !important; }
 
-.section__first--slide-content { text-align: center; 
+.section__first--slide-content { position: relative; text-align: center; width: 50%; margin: auto;
 	h1 { text-transform: uppercase; color: $white; font-family: $primfont; margin-bottom: 20px;
 		span { color: $green; font-variant: none; }
 	}
-	h5 { color: $white; }
+	h4 { color: $white; }
+
+	&:before { content:url('../img/laces.png'); position: absolute; top: -40px; }
 }
 
+
+// Hero Internal
+#section__first.internal { height: 620px; position: relative; z-index: 1; padding: 0; width: 100%; top: 0; 
+	a.button { margin-top: 40px; margin-bottom: 20px; }
+	.section__first--slide-content {
+		&:after { content:url('../img/line.png'); position: absolute; bottom: -190px; width: 1px; margin: auto; left: 0; right: 0; }
+	}
+}
 
 // PAGE BUILDER SECTIONS
 
@@ -88,6 +97,17 @@
 }
 #section__content--services--list { margin-bottom: 50px;
 	li {  background-image: linear-gradient($lightgray, $lightestgray ); padding: 25px 20px; 
+		h5 { }
+	}
+}
+
+// Text with List Panel
+#section__content--list {
+		h1, h4 { text-align: center; }
+}
+#section__content--list--main { text-align: left; }
+#section__content--list--list { margin-bottom: 50px;
+	li {  
 		h5 { }
 	}
 }
@@ -155,15 +175,21 @@
 
 
 
+// Full-width Image Panel
 
+#section__image  { height: 390px; padding-top: 0; padding-bottom: 0; }
+.section__image--panel {}
+.section__image--content-wrap { 
+	a.button-white { width: 420px; }
+}
 
 
 //Newsletter
 
-#section__content--newsletter { background-color: $darkestgray; }
+#section__content--newsletter { padding-top: 50px; padding-bottom: 50px; background-color: $darkestgray; }
 #section__content--newsletter--main {
-		h1 { color: $white;}
-		h4 { color: $medgray; }
+		h1 { color: $white; font-size: 1.7rem; }
+		h4 { color: $medgray; font-size: 1.1rem; }
  }
 
 //FOOTER

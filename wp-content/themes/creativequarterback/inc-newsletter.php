@@ -16,7 +16,7 @@
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>    
 					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_21d35c5543be3bfe049add728_ee9bcaee6e" tabindex="-1" value=""></div>
-					    <input type="submit" value="Join" name="Join" id="mc-embedded-subscribe" class="button bg-blue caps">
+					    <div class="clear"><input type="submit" value="Join" name="Join" id="mc-embedded-subscribe" class="button caps"></div>
 				    </div>
 				</form>
 			</div>		
